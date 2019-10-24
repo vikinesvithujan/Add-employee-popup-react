@@ -1,0 +1,16 @@
+h2{
+text-align: left;
+
+}
+.b1 {
+    background-color: rgb(3, 119, 197);
+    color: white;
+    padding: 0.9%;
+    margin: 1%;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    float: left;
+
+  }
+  
