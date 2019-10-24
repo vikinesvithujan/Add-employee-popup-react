@@ -1,21 +1,10 @@
 import React, { Component } from 'react';
 import '../employee/employee_details.css'
-import '../employee/add_employee.jsx'
+// import '../employee/add_employee.jsx'
 
 class Employee_details extends Component {
     state = {  }
 
-    openModal() {
-      this.setState({
-          visible : true
-      });
-  }
-
-  closeModal() {
-      this.setState({
-          visible : false
-      });
-  }
 
     render() { 
         return ( 
