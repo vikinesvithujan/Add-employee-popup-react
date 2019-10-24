@@ -4,11 +4,27 @@ import '../employee/add_employee.jsx'
 
 class Employee_details extends Component {
     state = {  }
+
+    openModal() {
+      this.setState({
+          visible : true
+      });
+  }
+
+  closeModal() {
+      this.setState({
+          visible : false
+      });
+  }
+
     render() { 
         return ( 
             <div className="">
             <h2>Employee</h2>
-            <input type="button" className="b1" value="Add Employee" onClick=""></input>
+            {/* <input type="button" className="b1" value="Add Employee" onClick=""></input> */}
+
+
+
             <table id="" className="" cellspacing="0" width="100%">
   <thead>
     <tr>

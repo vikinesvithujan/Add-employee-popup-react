@@ -5,9 +5,10 @@ class Add_employee extends Component {
     render() { 
         return ( 
             <div>
-<form className="">
+{/* <form className="">
     <div>
-        
+
+        <h3>Add Employee</h3>
 <label>Employee Id:</label>
 <input type="text" id="" className="" placeholder="Employee Id"></input>
 <br/>
@@ -39,7 +40,7 @@ class Add_employee extends Component {
 
 
 
-
+ */}
 
             </div>
          );
