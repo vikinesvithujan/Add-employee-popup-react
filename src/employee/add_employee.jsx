@@ -34,8 +34,11 @@ export default function TransitionsModal() {
   
   return (
     <div>
+      <p>Home / Company / Employee</p>
+                  <h2>Employee</h2>
+
       <button type="button" className="b1" onClick={handleOpen}>
-        Add Employee
+       <b> Add Employee </b>
       </button>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -83,8 +86,9 @@ export default function TransitionsModal() {
 
 </div>
 </form>
-<input type="submit" className="" value="cancel" onClick="onClose"></input>
 <input type="submit" className="" value="OK" onclick=""></input>
+<input type="submit" className="" value="Cancel" onClick=""></input>
+
 
 
 

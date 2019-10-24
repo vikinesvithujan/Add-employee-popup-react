@@ -8,13 +8,13 @@ class Employee_details extends Component {
 
     render() { 
         return ( 
+          
             <div className="">
-            <h2>Employee</h2>
             {/* <input type="button" className="b1" value="Add Employee" onClick=""></input> */}
 
 
 
-            <table id="" className="" cellspacing="0" width="100%">
+            <table id="customers" className="" cellspacing="0" width="100%">
   <thead>
     <tr>
       <th className="">Emp ID
