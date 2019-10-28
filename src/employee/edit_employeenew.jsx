@@ -3,7 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import '../employee/employee_details.css'
+import '../employee/edit_employee.css'
+import { Icon } from '@material-ui/core';
+import EditIcon from '@material-ui/icons/Edit';
 
 
 const useStyles = makeStyles(theme => ({
@@ -41,13 +43,11 @@ export default function TransitionsModal() {
   };
 
   return (
-    <div>
-      <p>Home / Company / Employee</p>
-                  <h2>Employee</h2>
+    <div>        
 
-      <button type="button" className="b1" onClick={handleOpen}>
-       <b> Add Employee </b>
-      </button>
+      < EditIcon  className="b1" onClick={handleOpen} >
+     
+      </ EditIcon>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -62,7 +62,7 @@ export default function TransitionsModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">Add Employee</h2>
+            <h2 id="transition-modal-title">Edit Employee</h2>
             
             <div>
 <form className=" "  >

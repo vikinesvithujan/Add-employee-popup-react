@@ -1,8 +1,10 @@
-import React from 'react';
+import React,{Component} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+//import '../employee/employee_details.css'
+//import './employee_details.css'
 import '../employee/employee_details.css'
 
 
@@ -20,49 +22,40 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function TransitionsModal() {
-  const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
+const classes = useStyles
+export default class PopupModal extends Component {
 
-  const handleClose = () => {
-    setOpen(false);
-  };
   
-  const handleCancel = () => {
-    setOpen(false);
-  };
+  // const { classes } = this.props;
+  
+  
+  render(){
 
-  const handleOkk = () => {
-    setOpen(false);
-  };
-
+  
   return (
     <div>
-      <p>Home / Company / Employee</p>
+      {/* <p>Home / Company / Employee</p>
                   <h2>Employee</h2>
 
-      <button type="button" className="b1" onClick={handleOpen}>
+      <button type="button" className="b1" >
        <b> Add Employee </b>
-      </button>
+      </button> */}
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
-        className={classes.modal}
-        open={open}
-        onClose={handleClose}
+         className={classes.modal}
+        open={this.props.status}
+        onClose={()=>this.props.closes()}
         closeAfterTransition
         BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 500,
         }}
       >
-        <Fade in={open}>
+        <Fade in={true}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">Add Employee</h2>
+            <h2 id="transition-modal-title">Edit Employee</h2>
             
             <div>
 <form className=" "  >
@@ -94,8 +87,8 @@ export default function TransitionsModal() {
 
 </div>
 </form>
-<input type="submit" className="" value="OK" onclick={handleOkk}></input>
-<input type="submit" className="" value="Cancel" onClick={handleCancel}></input>
+<input type="submit" className="" value="OK" onclick=""></input>
+<input type="submit" className="" value="Cancel" onClick=""></input>
 
 
 
@@ -111,4 +104,5 @@ export default function TransitionsModal() {
 
 
   );
+}
 }

@@ -9,7 +9,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import EditEmployee from './edit_employee'
+import EditEmployee from './edit_employeenew'
 
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -87,7 +87,7 @@ export default function DenseTable() {
                 <TableCell align="right">{row.name}</TableCell>
                 <TableCell align="right">{row.designation}</TableCell>
                 <TableCell align="right">{row.email}  </TableCell>
-                <TableCell align="right" onClick={handleClicks}>{row.edit} <i><EditIcon /></i> </TableCell>
+                <TableCell > <EditEmployee /></TableCell>
                 <TableCell align="right">{row.delete} <i><DeleteIcon/></i> </TableCell>
                 <TableCell align="right">{row.moredetails} <i><MoreIcon/></i> </TableCell>
 
@@ -99,7 +99,7 @@ export default function DenseTable() {
           </TableBody>
         </Table>
       </Paper>
-      <EditEmployee status={open} closes={handleClose}/>
+     
     </div>
   );
 }
